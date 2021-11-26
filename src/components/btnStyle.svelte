@@ -1,13 +1,6 @@
-<script>
-  export let insideBtn = "SEARCH"
-</script>
-
-<button class="custom_btn" role="button">
-{insideBtn}
-</button>
-
 <style>
-  .custom_btn {
+  :global(.custom_btn) {
+    text-transform: uppercase;
     appearance: button;
     background-color: rgb(34, 35, 39);
     background-image: none;
@@ -32,20 +25,20 @@
     white-space: nowrap;
   }
 
-  .custom_btn:focus {
+  :global(.custom_btn:focus) {
     text-decoration: none;
   }
 
-  .custom_btn:hover {
+  :global(.custom_btn:hover) {
     text-decoration: none;
   }
 
-  .custom_btn:active {
+  :global(.custom_btn:active) {
     box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
     outline: 0;
   }
 
-  .custom_btn:not([disabled]):active {
+  :global(.custom_btn:not([disabled]):active) {
     box-shadow: #fff 2px 2px 0 0, rgb(34, 35, 39) 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
