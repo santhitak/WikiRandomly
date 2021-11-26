@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <Landing />
+  <Landing /><Landing />
 </main>
 
 <style>
@@ -11,5 +11,12 @@
   :root {
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+
+    --dark: #222327;
+    --light: #ececee;
+  }
+  :global(section){
+    max-height: 100vh;
+    max-width: 100vw;
   }
 </style>
