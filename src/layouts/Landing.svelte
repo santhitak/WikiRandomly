@@ -1,26 +1,29 @@
 <script lang="ts">
   import Displayer from "@components/displayer.svelte";
   import BtnStyle from "@components/btnStyle.svelte";
+  import Logo from "@assets/logo.svelte";
 </script>
 
 <section>
   <div class="container">
     <div class="contentWrapper">
-      <div class="searchWrapper">
-        <h2>Random Wikipedia</h2>
-        <form action="">
-          <label for="wordSearch" />
-          <input
-            type="text"
-            class="search"
-            value=""
-            placeholder="type something"
-          />
-        </form>
-        <div>
-          <BtnStyle />
-          <button class="custom_btn">SEARCH</button>
-          <button class="custom_btn">RANDOM</button>
+      <div class="subWrapper">
+        <Logo />
+        <div class="searchWrapper">
+          <form action="">
+            <label for="wordSearch" />
+            <input
+              type="text"
+              class="search"
+              value=""
+              placeholder="type something"
+            />
+          </form>
+          <div>
+            <BtnStyle />
+            <button class="custom_btn">SEARCH</button>
+            <button class="custom_btn">RANDOM</button>
+          </div>
         </div>
       </div>
     </div>
@@ -47,18 +50,25 @@
     justify-content: center;
     align-items: center;
   }
-
+  .subWrapper {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .searchWrapper {
-    height: 40vh;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .search {
     padding: 0.5rem;
     width: 16rem;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   .search::selection {
