@@ -3,19 +3,19 @@
 </script>
 
 <main>
-  <Landing /><Landing />
+  <Landing />
 </main>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
   :root {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
 
     --dark: #222327;
     --light: #ececee;
   }
-  :global(section){
+  :global(section) {
     max-height: 100vh;
     max-width: 100vw;
   }
