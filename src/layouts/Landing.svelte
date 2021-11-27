@@ -1,5 +1,6 @@
 <script lang="ts">
   import Displayer from "@components/displayer.svelte";
+  import BtnStyle from "@components/btnStyle.svelte";
 </script>
 
 <section>
@@ -17,6 +18,7 @@
           />
         </form>
         <div>
+          <BtnStyle />
           <button class="custom_btn">SEARCH</button>
           <button class="custom_btn">RANDOM</button>
         </div>
