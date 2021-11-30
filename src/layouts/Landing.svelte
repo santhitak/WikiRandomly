@@ -24,7 +24,7 @@
     color: var(--dark);
     display: grid;
     justify-content: center;
-    grid-template-rows: 7vw auto;
+    grid-template-rows: 5vw auto;
   }
   .contentWrapper {
     width: 100%;
@@ -34,9 +34,10 @@
     align-items: center;
   }
   .searchWrapper {
-    width: 80vw;
+    width: 90vw;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
     justify-content: space-between;
   }
 </style>
