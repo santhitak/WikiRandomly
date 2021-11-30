@@ -6,11 +6,9 @@
 
 <section>
   <div class="container">
-    <div class="contentWrapper">
-      <div class="searchWrapper">
-        <Logo />
-        <button class="custom_btn">RANDOM</button>
-      </div>
+    <div class="searchWrapper">
+      <Logo />
+      <button class="custom_btn">RANDOM</button>
     </div>
     <div class="contentWrapper">
       <Displayer />
@@ -26,7 +24,7 @@
     color: var(--dark);
     display: grid;
     justify-content: center;
-    grid-template-columns: 25vw 75vw;
+    grid-template-rows: 7vw auto;
   }
   .contentWrapper {
     width: 100%;
@@ -36,10 +34,9 @@
     align-items: center;
   }
   .searchWrapper {
-    height: 50%;
+    width: 80vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 </style>
