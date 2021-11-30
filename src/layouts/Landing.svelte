@@ -7,24 +7,9 @@
 <section>
   <div class="container">
     <div class="contentWrapper">
-      <div class="subWrapper">
+      <div class="searchWrapper">
         <Logo />
-        <div class="searchWrapper">
-          <form action="">
-            <label for="wordSearch" />
-            <input
-              type="text"
-              class="search"
-              value=""
-              placeholder="type something"
-            />
-          </form>
-          <div>
-            <BtnStyle />
-            <button class="custom_btn">SEARCH</button>
-            <button class="custom_btn">RANDOM</button>
-          </div>
-        </div>
+        <button class="custom_btn">RANDOM</button>
       </div>
     </div>
     <div class="contentWrapper">
@@ -50,31 +35,11 @@
     justify-content: center;
     align-items: center;
   }
-  .subWrapper {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   .searchWrapper {
     height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-  }
-
-  .search {
-    padding: 0.5rem;
-    width: 16rem;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-  .search::selection {
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
-    color: var(--light);
-    background: var(--dark);
   }
 </style>
