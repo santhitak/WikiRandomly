@@ -15,7 +15,7 @@
     font-weight: 400;
     line-height: 20px;
     margin: 0 5px 10px 0;
-    padding: 0.7rem 1.7rem;
+    padding: .6rem 1rem;
     text-align: center;
     text-transform: none;
     touch-action: manipulation;
